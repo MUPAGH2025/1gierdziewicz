@@ -4,7 +4,7 @@ jobs:
   sprawozdanie:
     runs-on: ubuntu-latest
     steps:
-      - run: sudo apt-get install texlive-xetex incscape pandoc
+      - run: sudo apt-get install texlive-xetex inkscape pandoc
       - uses: actions/checkout@v4
       - run: pip install matplotlib pint open-atmos-jupiter-utils scipy nbconvert ipykernel
       - run: python -m nbconvert --to pdf --executes PRZEPLYW_LAB1.ipynb checkout
