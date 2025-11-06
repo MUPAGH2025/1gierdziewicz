@@ -10,5 +10,5 @@ jobs:
       - run: python -m nbconvert --to pdf --executes PRZEPLYW_LAB1.ipynb checkout
       - uses: actions/upload-artifact@v4
         with:
-          name: sprawozdanie.pdf
+          path: sprawozdanie.pdf
 
